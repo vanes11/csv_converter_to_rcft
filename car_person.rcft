@@ -1,0 +1,30 @@
+FormalContext Person
+algo fca 
+||male|female|city|countryside|single|married|
+|Alice||x|x||x|| 
+|Bob|x|||x||x| 
+|Charlie|x||x||x|| 
+|Julie||x||x||x| 
+
+FormalContext Car
+algo fca 
+||Renault|Peugeot|Tesla|family|sport|berline|
+|car1|x|||x||| 
+|car2||x||x||| 
+|car3|||x||x|| 
+|car4|||x|||x| 
+|car5||x|||x|| 
+|car6|x|||||x| 
+
+RelationalContext Owner
+source Car
+target Person
+scaling exist
+||Alice|Bob|Charlie|Julie|
+|car1||x||| 
+|car2||||x| 
+|car3|||x|| 
+|car4|x|||| 
+|car5||||x| 
+|car6||x||| 
+

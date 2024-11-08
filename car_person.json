@@ -1,0 +1,9 @@
+{
+    "F_context_name" : {"person.csv" : "Person", "car.csv" : "Car"},
+
+
+
+    "R_context_name":[{"nom" : "owner.csv", "source" : "car.csv", "target": "person.csv"}]
+    }
+
+
