@@ -1,0 +1,20 @@
+# A csv converter to Graph-FCA .p format and RCA .rcft format.
+
+> Graph-FCA (GCA) and RCA (Relational Concept Analysis) are two **major extensions**  
+of Formal Concept Analysis (FCA) developed to meet the growing need to process 
+**multirelational** data in order to extract *meaningful and interpretable structures*. 
+
+> The aim is to convert a set of .csv files (representing multi-relational data) to be analyzed,
+into the corresponding .p and .rcft files for analysis with GCA and RCA respectively. 
+The parameters of these files are encoded in a .json file.
+
+> As an example, we have 2 csv files (*car.csv, person.csv*) describing objects by their attributes (called **formal contexts**) 
+and the file *owner.csv*  encoding the relationships between cars and persons: this is called **relational context**.
+
+The *car_person.json* file contains information on all csv files (name, source, target , etc).
+
+## As a result, we have:
+  - *car_person.p*: the file to be sent to GCA for graph pattern construction
+  - *car_person.crf*t: file to be sent to RCA for construction of the interconnected lattice family
+  - *car_person_r.rcft*: the input file for RCA, if inverse relations are also to be analyzed.
+
